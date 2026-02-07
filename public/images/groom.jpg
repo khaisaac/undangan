@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="groomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="180"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#groomBg)"/>
+  
+  <!-- Decorative circle frame -->
+  <circle cx="200" cy="200" r="190" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.5"/>
+  <circle cx="200" cy="200" r="180" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Placeholder silhouette -->
+  <g clip-path="url(#circleClip)">
+    <rect width="400" height="400" fill="#2d2d4a"/>
+    
+    <!-- Simple male silhouette -->
+    <ellipse cx="200" cy="150" rx="60" ry="70" fill="#3d3d5c"/>
+    <ellipse cx="200" cy="350" rx="100" ry="120" fill="#3d3d5c"/>
+    
+    <!-- Suit collar hint -->
+    <path d="M150 280 L200 320 L250 280" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Gold accent ring -->
+  <circle cx="200" cy="200" r="175" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.4"/>
+</svg>

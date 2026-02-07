@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="brideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="circleClipBride">
+      <circle cx="200" cy="200" r="180"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#brideBg)"/>
+  
+  <!-- Decorative circle frame -->
+  <circle cx="200" cy="200" r="190" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.5"/>
+  <circle cx="200" cy="200" r="180" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Placeholder silhouette -->
+  <g clip-path="url(#circleClipBride)">
+    <rect width="400" height="400" fill="#3d2d5c"/>
+    
+    <!-- Simple female silhouette -->
+    <ellipse cx="200" cy="140" rx="55" ry="65" fill="#4d3d6c"/>
+    <ellipse cx="200" cy="360" rx="110" ry="130" fill="#4d3d6c"/>
+    
+    <!-- Hair hint -->
+    <path d="M130 120 Q150 80 200 70 Q250 80 270 120 Q260 150 200 160 Q140 150 130 120" fill="#2d1d4c"/>
+    
+    <!-- Veil/dress hint -->
+    <path d="M100 200 Q150 180 200 190 Q250 180 300 200" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- Gold accent ring -->
+  <circle cx="200" cy="200" r="175" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.4"/>
+</svg>

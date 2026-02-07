@@ -1,0 +1,46 @@
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Undangan Pernikahan Pandu & Mei",
+  description: "Undangan Pernikahan Pandu & Mei - Minggu, 15 Maret 2026",
+  keywords: ["undangan", "pernikahan", "wedding", "invitation"],
+  authors: [{ name: "Pandu & Mei" }],
+  openGraph: {
+    title: "Undangan Pernikahan Pandu & Mei",
+    description: "Kami mengundang Anda untuk hadir di acara pernikahan kami",
+    type: "website",
+    images: ["/images/og-image.png"],
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#581c87",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="id" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-sans antialiased">{children}</body>
+    </html>
+  );
+}
