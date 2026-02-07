@@ -5,7 +5,6 @@ import { invitationData } from "@/data/invitation";
 
 const storyData = [
   {
-    icon: "💫",
     title: "Awal Mula",
     subtitle: "Pertemuan Pertama",
     description:
@@ -13,7 +12,6 @@ const storyData = [
     year: "2022",
   },
   {
-    icon: "💍",
     title: "Janji",
     subtitle: "Lamaran & Pertunangan",
     description:
@@ -21,7 +19,6 @@ const storyData = [
     year: "2025",
   },
   {
-    icon: "🕌",
     title: "Tujuan",
     subtitle: "Membangun Keluarga Sakinah",
     description:
@@ -110,25 +107,6 @@ export default function TimelineSection() {
                         {story.year}
                       </span>
                     </div>
-
-                    {/* Icon */}
-                    <m.div
-                      animate={
-                        prefersReducedMotion
-                          ? {}
-                          : {
-                              scale: [1, 1.1, 1],
-                            }
-                      }
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                      }}
-                      className="text-5xl mb-4"
-                    >
-                      {story.icon}
-                    </m.div>
 
                     {/* Content */}
                     <h3 className="font-script text-3xl text-gray-800 mb-1">

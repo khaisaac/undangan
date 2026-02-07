@@ -135,12 +135,10 @@ export default function EventSection() {
   const events = [
     {
       ...invitationData.events.akad,
-      icon: "💍",
       color: "from-purple-500 to-purple-700",
     },
     {
       ...invitationData.events.resepsi,
-      icon: "🎉",
       color: "from-gold-500 to-gold-700",
     },
   ];
@@ -189,13 +187,6 @@ export default function EventSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <m.div
-            animate={prefersReducedMotion ? {} : { rotate: [0, 5, -5, 0] }}
-            transition={{ duration: 4, repeat: Infinity }}
-            className="inline-block mb-4"
-          >
-            <span className="text-4xl">💒</span>
-          </m.div>
           <p className="text-sm tracking-[0.3em] uppercase text-gold-500 mb-3">
             Waktu & Tempat
           </p>
