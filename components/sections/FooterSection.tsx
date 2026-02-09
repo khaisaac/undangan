@@ -211,11 +211,9 @@ export default function FooterSection() {
           className="mb-12"
         >
           <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
-            <span className="text-gold-400 text-xl">☪</span>
             <p className="text-gold-200/80 text-sm md:text-base font-serif italic">
               Wassalamualaikum Warahmatullahi Wabarakatuh
             </p>
-            <span className="text-gold-400 text-xl">☪</span>
           </div>
         </m.div>
 

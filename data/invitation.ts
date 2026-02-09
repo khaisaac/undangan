@@ -72,18 +72,18 @@ export interface InvitationData {
 
 export const invitationData: InvitationData = {
   groom: {
-    name: "Pandu",
-    fullName: "Pandu Setia Umbara, S.Bus",
+    name: "Enjjel",
+    fullName: "Enjjel Nurhaliza, S.ST",
     parentInfo: "Putra dari Bapak H. Sulaiman & Ibu Hj. Fatimah",
-    instagram: "@panduumbara",
-    photo: "/images/groom.jpeg",
+    instagram: "@enjjelnurhaliza",
+    photo: "/images/bride.jpg",
   },
   bride: {
-    name: "Mei",
-    fullName: "Mei Maulidia, S.Bus",
+    name: "Tazki",
+    fullName: "Tazki Maulana, S.ST",
     parentInfo: "Putri dari Bapak H. Abdullah & Ibu Hj. Aisyah",
-    instagram: "@meimaulidia",
-    photo: "/images/groom.jpeg",
+    instagram: "@tazkimaulana",
+    photo: "/images/groom.jpg",
   },
 
   weddingDate: "2026-03-15",
@@ -156,21 +156,21 @@ export const invitationData: InvitationData = {
   images: {
     cover: "/images/cover.jpg",
     hero: "/images/hero.jpg",
-    groomPhoto: "/images/groom.jpg",
-    bridePhoto: "/images/bride.jpg",
+    groomPhoto: "/images/bride.jpg",
+    bridePhoto: "/images/groom.jpg",
   },
 
   bankAccounts: [
     {
       bank: "BCA",
       accountNumber: "1234567890",
-      accountName: "Pandu Setia Umbara",
-      logo: "bca",
+      accountName: "Tazki Maulana",
+      logo: "bri",
     },
     {
       bank: "Mandiri",
       accountNumber: "0987654321",
-      accountName: "Mei Maulidia",
+      accountName: "Enjjel Nurhaliza",
       logo: "mandiri",
     },
   ],

@@ -18,13 +18,19 @@ const STORAGE_KEY = "wedding-reactions";
 const USER_REACTIONS_KEY = "wedding-user-reactions";
 
 const initialReactions: Reaction[] = [
-  { id: "love", emoji: "💕", label: "Bahagia", count: 128 },
-  { id: "celebrate", emoji: "🎉", label: "Selamat!", count: 95 },
-  { id: "pray", emoji: "🤲", label: "Doa", count: 87 },
-  { id: "cry", emoji: "🥹", label: "Terharu", count: 64 },
-  { id: "fire", emoji: "🔥", label: "Keren!", count: 52 },
-  { id: "heart", emoji: "❤️", label: "Cinta", count: 143 },
+  { id: "love", emoji: "💕", label: "Bahagia", count: 0 },
+  { id: "celebrate", emoji: "🎉", label: "Selamat!", count: 0 },
+  { id: "pray", emoji: "🤲", label: "Doa", count: 0 },
+  { id: "cry", emoji: "🥹", label: "Terharu", count: 0 },
+  { id: "fire", emoji: "🔥", label: "Keren!", count: 0 },
+  { id: "heart", emoji: "❤️", label: "Cinta", count: 0 },
 ];
+
+// Clear old reactions data to start fresh from 0
+if (typeof window !== "undefined") {
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(USER_REACTIONS_KEY);
+}
 
 export default function RSVPSection({ guestName }: RSVPSectionProps) {
   const prefersReducedMotion = useReducedMotion();

@@ -64,7 +64,7 @@ ${greeting} ${guestName}
 Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i
 untuk menghadiri acara pernikahan kami:
 
-*Ahmad & Siti*
+*Enjjel & Tazki*
 
 📅 Minggu, 15 Maret 2026
 

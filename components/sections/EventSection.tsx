@@ -377,7 +377,6 @@ export default function EventSection() {
             >
               <span>Klik Untuk Membuka Maps</span>
             </a>
-            
           </div>
         </m.div>
       </div>
